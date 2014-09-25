@@ -1,4 +1,8 @@
 /*CSS for HEADER section*/
+body{
+  width:1300px;
+  margin-right:auto;
+}
 
 header{
     background-image:url('https://raw.githubusercontent.com/tiy-atlanta-js/Assignments/master/Assignment%2003/assets/header.jpg');
@@ -6,7 +10,6 @@ header{
   border: 1px solid white;
   width:1300px;
   height:523px;
-  margin-right: auto;
 
 }
 
@@ -14,7 +17,7 @@ ul {
   list-style-type: none;
 }
 
-.nav {
+.nav1 {
   height:30px;
   font-size:16px;
   font-weight:bold;
@@ -22,7 +25,7 @@ ul {
   display:inline;
 }
 
-.nav ul{
+.nav1 .button1 img, .nav1 .button1, .nav1 .button2{
   margin-right:150px;
   margin-left:100px;
 }
@@ -31,7 +34,12 @@ ul li {
   padding: 4px;
 }
 
-.button1 ul li{
+.button1img img {
+  display:inline-block;
+  float:left;
+}
+
+.button1 {
   display:inline-block;
   float:left;
 }
@@ -41,29 +49,86 @@ ul li {
   float:right;
 }
 
-.name{
+.logo{
   text-align:center;
-  padding-top:
 }
 
-h1 {
+.name {
   color:white;
   font-size: 100px;
   margin-bottom:0;
   padding-top:90px;
 }
 
-.name p {
+.logo p {
   font-size: 18px;
   margin:0px auto;
 }
 
-/* this is the body*/
-.page {
+/* this is the right side*/
+main {
   font-family:'Open Sans',sans-serif;
+  padding-top:245px;
 }
 
-h2 {
-  text-transform:uppercase;
+.rtside {
+  margin-left:155px;
+  margin-right:5px;
+  height:946px;
+  width:635px;
+}
 
+h1 {
+  text-transform:uppercase;
+  height:142:px;
+  width:584px;
+  margin-right:0px;
+  font-size:50px;
+}
+
+p {
+  font-size:16px;
+}
+
+.text1 {
+  height:206px;
+}
+
+blockquote {
+  height:56px;
+  font-size:30px;
+  text-transform:uppercase;
+  margin:0px;
+}
+
+.text2 {
+  height:312px;
+}
+
+.talks ul{
+  height:60px;
+  width:120px;
+  font-size:16px;
+  font-weight:bold;
+  text-transform:uppercase;
+}
+
+.talks img {
+  background-color:black;
+  display:inline;
+  float:left;
+}
+
+.read, .comment, .share {
+  display:inline;
+  float:left;
+}
+
+/* this is the left side*/
+
+.lfside {
+  margin-left:5px;
+  margin-right:5px;
+  height:946px;
+  width:635px;
 }
