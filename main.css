@@ -4,17 +4,17 @@ body{
   margin-right:auto;
 }
 
+ul, li {
+  list-style: none;
+}
+
 header{
-    background-image:url('https://raw.githubusercontent.com/tiy-atlanta-js/Assignments/master/Assignment%2003/assets/header.jpg');
+  background-image:url('assets/header.jpg');
   font-family:'Oswald', sans-serif;
   border: 1px solid white;
   width:1300px;
   height:523px;
 
-}
-
-ul {
-  list-style-type: none;
 }
 
 .nav1 {
@@ -170,9 +170,9 @@ blockquote {
 
 /*This is the footer*/
 
-.bottom {
+footer {
   width:1300px;
-  height:572px;
+  height:579px;
   margin-top:1010px;
   font-family:'Oswald', sans-serif;
 
@@ -192,10 +192,14 @@ blockquote {
   padding:0px;
 }
 
-
 .fcontainer img {
   margin:0px auto;
   padding:0px;
   float:left;
+}
 
+.navbottom {
+  margin-top:329px;
+  height:96px;
+  background-color:gray;
 }
