@@ -1,4 +1,5 @@
 /*CSS for HEADER section*/
+
 body{
   width:1300px;
   margin-right:auto;
@@ -213,82 +214,76 @@ footer {
 .pic1 {
   width:322px;
   height:328px;
+  background: url('assets/article-image-1.jpg');
   display:inline-block;
   position:relative;
 }
 
-.pic1:after {
-  content:"";
-  background: url('assets/article-image-1.jpg');
-  opacity:0.3;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
+.pic1text p{
   position:absolute;
-  z-index:-1;
+  bottom:0;
+  left:0.5em;
+  width:322px;
+  font-weight:bold;
+  font-size:25px;
+  color:white;
 }
 
 .pic2 {
   width:322px;
   height:328px;
+  background: url('assets/article-image-2.jpg');
   display:inline-block;
   position:relative;
 }
 
-.pic2:after {
-  content:"";
-  background: url('assets/article-image-2.jpg');
-  opacity:0.3;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
+.pic2text p{
   position:absolute;
-  z-index:-1;
+  bottom:0;
+  left:0.5em;
+  width:322px;
+  font-weight:bold;
+  font-size:25px;
+  color:white;
 }
 
 .pic3 {
   width:322px;
   height:328px;
+  background: url('assets/article-image-3.jpg');
   display:inline-block;
   position:relative;
 }
 
-.pic3:after {
-  content:"";
-  background: url('assets/article-image-3.jpg');
-  opacity:0.3;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
+.pic3text p{
   position:absolute;
-  z-index:-1;
+  bottom:0;
+  left:0.5em;
+  width:322px;
+  font-weight:bold;
+  font-size:25px;
+  color:white;
 }
 
 .pic4 {
   width:322px;
   height:328px;
+  background: url('assets/article-image-4.jpg');
   display:inline-block;
   position:relative;
 }
 
-.pic4:after {
-  content:"";
-  background: url('assets/article-image-4.jpg');
-  opacity:0.3;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
+.pic4text p{
   position:absolute;
-  z-index:-1;
+  bottom:0;
+  left:0.5em;
+  width:322px;
+  font-weight:bold;
+  font-size:25px;
+  color:white;
 }
 
-
 .bottom {
-  margin-top:329px;
   height:96px;
   background-color:gray;
 }
