@@ -5,7 +5,7 @@ body{
 }
 
 ul, li {
-  list-style: none;
+  list-style:none;
 }
 
 header{
@@ -198,8 +198,42 @@ footer {
   float:left;
 }
 
-.navbottom {
+.bottom {
   margin-top:329px;
   height:96px;
   background-color:gray;
+}
+
+.navbottom {
+  height:42px;
+  width:1006px;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+.nblf {
+  width:355px;
+  margin:0px auto;
+  float:left;
+  display:inline;
+}
+
+.nbrt {
+  width:305px;
+  margin:0px auto;
+  float:right;
+  display:inline;
+}
+
+.nbrt ul li{
+  text-align:right;
+  float:right;
+  display:inline-block;
+}
+
+.nblf ul li{
+  text-align:left;
+  float:left;
+  display:inline-block;
+  width:348px;
 }
