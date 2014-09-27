@@ -104,12 +104,12 @@ main {
 h1 {
   text-transform:uppercase;
   height:142:px;
-  width:584px;
+  width:603px;
   margin-top:0px;
   margin-right:0px;
   margin-bottom:15px;
   font-family:'Oswald', sans-serif;
-  font-size:60px;
+  font-size:70px;
 }
 
 .timestamp {
@@ -271,6 +271,8 @@ blockquote {
 .sbtext p{
   height:169px;
   width:278px;
+  font-size:14px;
+  color:hsla(206, 18%, 73%, 1);
 }
 
 
@@ -321,7 +323,7 @@ footer {
   left:0.5em;
   width:243px;
   font-weight:bold;
-  font-size:25px;
+  font-size:28px;
   color:white;
 }
 
@@ -353,7 +355,7 @@ footer {
   left:0.5em;
   width:243px;
   font-weight:bold;
-  font-size:25px;
+  font-size:28px;
   color:white;
 }
 
@@ -384,7 +386,7 @@ footer {
   left:0.5em;
   width:243px;
   font-weight:bold;
-  font-size:25px;
+  font-size:28px;
   color:white;
 }
 
@@ -415,7 +417,7 @@ footer {
   left:0.5em;
   width:243px;
   font-weight:bold;
-  font-size:25px;
+  font-size:28px;
   color:white;
 }
 
@@ -443,6 +445,7 @@ footer {
   margin-left:auto;
   margin-right:auto;
   color:hsla(206, 18%, 69%, 1);
+  display:block;
 }
 
 .bottomleft {
@@ -450,8 +453,9 @@ footer {
   height:92px;
   margin:0px auto;
   float:left;
-  display:inline;
+  display:block;
   font-size:16px;
+  list-style:none;
 }
 
 .bottomleft ul li{
@@ -461,17 +465,35 @@ footer {
   padding-left:4px;
 }
 
+.bottomleft img {
+  display:inline-block;
+  float:left;
+  margin-right:12px;
+}
+
+.tiy {
+  padding-top:10px;
+}
+
 .bottomright {
   width:355px;
   height:92px;
   margin:0px auto;
+  padding-top:10px;
   float:right;
-  display:inline;
+  display:inline-block;
+  font-size:14px;
 }
 
 .bottomright ul li{
   float:right;
+  list-style:none;
   display:inline-block;
-  font-size:14px;
   text-align:center;
+  padding-right:2px;
+  padding-left:3px;
+  border-right:1px solid hsla(206, 18%, 69%, 1);
 }
+
+.bottomright li:first-child {
+  border-left:none;
