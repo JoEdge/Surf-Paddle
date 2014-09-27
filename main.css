@@ -11,7 +11,7 @@ ul li {
   list-style:none;
 }
 
-.header{
+header{
   background-image:url('assets/header.jpg');
   font-family:'Oswald', sans-serif;
   border: 1px solid white;
@@ -117,6 +117,10 @@ h1 {
   font-family:Oswald, sans serif;
 }
 
+.timestamp span{
+  text-decoration: underline;
+}
+
 .timestamp ul{
   margin-right:4px;
   padding-left:0px;
@@ -126,15 +130,16 @@ h1 {
   font-size:14px;
   display:inline-block;
   float:left;
-  padding-left:10px;
 }
 
 .name2 {
   color: hsla(206, 84%, 38%, 1);
+  padding-left:10px;
 }
 
 .date{
   color: hsla(206, 18%, 73%, 1);
+  padding-left:10px;
 }
 
 .timestamp img {
@@ -145,11 +150,22 @@ h1 {
 .text1 {
   height:206px;
   width:621px;
+  margin-top:0px;
+}
+
+.text1 span {
+  text-decoration: underline;
+  color: hsla(206, 18%, 73%, 1);
+}
+
+.text1 span:hover{
+  color:hsla(206, 84%, 38%, 1);
 }
 
 blockquote {
   height:56px;
   font-size:30px;
+  font-weight:bold;
   text-transform:uppercase;
   margin:0px;
   border-left: 1px solid black;
@@ -160,6 +176,15 @@ blockquote {
 
 .text2 {
   height:312px;
+}
+
+.text2 span {
+  text-decoration: underline;
+  color: hsla(206, 18%, 73%, 1);
+}
+
+.text2 span:hover{
+  color:hsla(206, 84%, 38%, 1);
 }
 
 .connect{
@@ -212,7 +237,7 @@ blockquote {
 .div2 {
   margin-left:5px;
   margin-right:161px;
-  margin-top:80px;
+  margin-top:100px;
   height:739px;
   width:305px;
   float:right;
@@ -238,19 +263,23 @@ blockquote {
   display:inline;
   margin-top:0px;
   margin-bottom:55px;
-
 }
 
 .media li{
   padding-right:2px;
   padding-left:3px;
-  border-left:1px solid hsla(206, 84%, 38%, 1);
+  border-left:1px solid hsla(0, 0%, 98%, 1);
   display:inline-block;
+  font-size:14px;
   text-align:center;
 }
 
 .media li:first-child {
   border-left:none;
+}
+
+.ad {
+  padding-top:20px;
 }
 
 .ad p {
@@ -259,22 +288,34 @@ blockquote {
   text-decoration: underline;
   width:278px;
   margin-top:0px;
+  font-family:Oswald,sans-serif;
   font-size:16px;
 }
 
 .sbtext h3{
   text-transform:uppercase;
   color: hsla(206, 84%, 38%, 1);
+  padding-top:20px;
+  margin-bottom:0px;
   font-size:20px;
   font-family: Oswald, sans serif;
 }
 .sbtext p{
   height:169px;
   width:278px;
+  margin-top:0px;
   font-size:14px;
   color:hsla(206, 18%, 73%, 1);
 }
 
+.sbtext span {
+  text-decoration: underline;
+  color: hsla(206, 18%, 73%, 1);
+}
+
+.sbtext span:hover {
+  color:hsla(206, 84%, 38%, 1);
+}
 
 /*This is the footer*/
 
@@ -437,11 +478,12 @@ footer {
 .bottom {
   height:96px;
   background-color:hsla(204, 82%, 18%, 1);
+  font-family: Open Sans, sans serif;
 }
 
 .navbottom {
   height:90px;
-  width:1006px;
+  width:1060px;
   margin-left:auto;
   margin-right:auto;
   color:hsla(206, 18%, 69%, 1);
@@ -454,7 +496,7 @@ footer {
   margin:0px auto;
   float:left;
   display:block;
-  font-size:16px;
+  font-size:14px;
   list-style:none;
 }
 
@@ -462,7 +504,6 @@ footer {
   float:left;
   display:inline-block;
   height:40px;
-  padding-left:4px;
 }
 
 .bottomleft img {
@@ -476,24 +517,25 @@ footer {
 }
 
 .bottomright {
-  width:355px;
+  width:360px;
   height:92px;
   margin:0px auto;
   padding-top:10px;
-  float:right;
+  float:left;
   display:inline-block;
-  font-size:14px;
+  font-size:12px;
 }
 
 .bottomright ul li{
-  float:right;
+  FLoat:right;
   list-style:none;
   display:inline-block;
   text-align:center;
-  padding-right:2px;
-  padding-left:3px;
+  padding-right:8px;
+  padding-left:10px;
   border-right:1px solid hsla(206, 18%, 69%, 1);
 }
 
 .bottomright li:first-child {
-  border-left:none;
+  border-right:none;
+}
