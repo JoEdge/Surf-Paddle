@@ -11,30 +11,24 @@ ul li {
   list-style:none;
 }
 
-header{
+.header{
   background-image:url('assets/header.jpg');
   font-family:'Oswald', sans-serif;
   border: 1px solid white;
   width:1300px;
   height:523px;
-
 }
 
 .nav1 {
-  height:30px;
+  height:100px;
+  width:200px;
   font-size:16px;
   font-weight:bold;
   text-transform:uppercase;
   display:inline;
 }
 
-.nav1 .img, .nav1 .blog, .nav1 .info{
-  margin-right:150px;
-  margin-left:100px;
-  padding: 4px;
-}
-
-.nav1 img {
+.blog img {
   display:inline-block;
   float:left;
 }
@@ -44,6 +38,15 @@ header{
   float:left;
 }
 
+.blog p{
+  margin:0px auto;
+}
+
+.info {
+  height:100px;
+  width:200px;
+  float:right;
+}
 .info ul li{
   display:inline-block;
   float:right;
@@ -51,6 +54,7 @@ header{
 
 .logo{
   text-align:center;
+  height:100px;
 }
 
 .name {
@@ -71,7 +75,7 @@ main {
 }
 
 .div1 {
-  margin-top:190px;
+  margin-top:50px;
   margin-left:155px;
   margin-right:5px;
   height:809px;
@@ -84,6 +88,7 @@ h1 {
   text-transform:uppercase;
   height:142:px;
   width:584px;
+  margin-top:0px;
   margin-right:0px;
   margin-bottom:15px;
   font-family:'Oswald', sans-serif;
@@ -140,23 +145,28 @@ blockquote {
   height:312px;
 }
 
-.talks ul{
-  height:60px;
-  width:120px;
+.connect{
+  height:100px;
+  width:300px;
   font-size:16px;
   font-weight:bold;
   text-transform:uppercase;
+  display:inline;
 }
 
-.talks img {
+.read img, .upload img, .share img {
   background-color:black;
+  display:inline-block;
+  float:left;
+}
+
+.read, .upload, .share {
   display:inline;
   float:left;
 }
 
-.read, .comment, .share {
-  display:inline;
-  float:left;
+.read p, .upload p, .share p{
+  margin:0px auto;
 }
 
 
@@ -165,10 +175,11 @@ blockquote {
 .div2 {
   margin-left:5px;
   margin-right:161px;
-  margin-top:255px;
+  margin-top:80px;
   height:739px;
   width:305px;
   float:right;
+  font-family:'Open Sans',sans-seri;
 }
 
 .social{
@@ -176,7 +187,7 @@ blockquote {
 }
 
 .avatar {
-  margin-left:87px;
+  margin-left:100px;
 }
 
 .social p {
@@ -194,10 +205,15 @@ blockquote {
 }
 
 .media li{
-  padding-right:3px;
-  border-right:1px solid hsla(206, 84%, 38%, 1);
+  padding-right:2px;
+  padding-left:3px;
+  border-left:1px solid hsla(206, 84%, 38%, 1);
   display:inline-block;
   text-align:center;
+}
+
+.media li:first-child {
+  border-left:none;
 }
 
 .ad p {
@@ -209,11 +225,11 @@ blockquote {
   font-size:16px;
 }
 
-.sbtext h4{
+.sbtext h3{
   text-transform:uppercase;
   color: hsla(206, 84%, 38%, 1);
-  padding-top:25px;
   font-size:20px;
+  font-family: Oswald, sans serif;
 }
 .sbtext p{
   height:169px;
@@ -226,7 +242,7 @@ blockquote {
 footer {
   width:1300px;
   height:579px;
-  margin-top:1110px;
+  margin-top:980px;
   font-family:'Oswald', sans-serif;
 
 }
