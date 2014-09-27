@@ -21,47 +21,64 @@ ul li {
 
 .nav1 {
   height:100px;
-  width:200px;
+  width:1037px;
+  margin-right:auto;
+  margin-left:auto;
   font-size:16px;
   font-weight:bold;
   text-transform:uppercase;
-  display:inline;
+  display:block;
+}
+
+.blog {
+  display:block;
+  width:400px;
+  margin-top:10px;
+  margin-right:0px;
+  list-style:none;
+  float:left;
+}
+
+.blog ul li{
+  display:inline-block;
+  float:left;
 }
 
 .blog img {
   display:inline-block;
   float:left;
+  margin-right:12px;
 }
 
-.blog {
-  display:inline-block;
-  float:left;
-}
-
-.blog p{
-  margin:0px auto;
+.sp {
+  padding-top:10px;
 }
 
 .info {
-  height:100px;
-  width:200px;
+  display:inline-block;
+  width:400px;
+  margin-top:10px;
+  margin-right:0px;
+  list-style:none;
   float:right;
+  font-size:18px;
 }
 .info ul li{
   display:inline-block;
   float:right;
+  margin-right:12px;
 }
 
 .logo{
   text-align:center;
-  height:100px;
+  height:300px;
 }
 
 .name {
   color:white;
   font-size: 100px;
   margin-bottom:0;
-  padding-top:160px;
+  padding-top:60px;
 }
 
 .logo p {
