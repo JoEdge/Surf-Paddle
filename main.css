@@ -28,12 +28,9 @@ header{
   display:inline;
 }
 
-.nav1 .img, .nav1 .button1, .nav1 .button2{
+.nav1 .img, .nav1 .blog, .nav1 .info{
   margin-right:150px;
   margin-left:100px;
-}
-
-ul li {
   padding: 4px;
 }
 
@@ -42,12 +39,12 @@ ul li {
   float:left;
 }
 
-.button1 {
+.blog {
   display:inline-block;
   float:left;
 }
 
-.button2 ul li{
+.info ul li{
   display:inline-block;
   float:right;
 }
@@ -60,7 +57,7 @@ ul li {
   color:white;
   font-size: 100px;
   margin-bottom:0;
-  padding-top:90px;
+  padding-top:160px;
 }
 
 .logo p {
@@ -70,15 +67,15 @@ ul li {
 
 /* this is the left side*/
 main {
-  font-family:'Open Sans',sans-serif;
-  padding-top:245px;
+  font-family:'Open Sans',sans-seri;
 }
 
 .div1 {
+  margin-top:190px;
   margin-left:155px;
   margin-right:5px;
-  height:953px;
-  width:635px;
+  height:809px;
+  width:637px;
   display:block;
   float:left;
 }
@@ -90,24 +87,24 @@ h1 {
   margin-right:0px;
   margin-bottom:15px;
   font-family:'Oswald', sans-serif;
-  font-size:55px;
+  font-size:60px;
 }
 
-.button3 {
+.timestamp {
   height:40px;
   font-family:Oswald, sans serif;
 }
 
-.button3 ul{
+.timestamp ul{
   margin-right:4px;
   padding-left:0px;
 }
 
-.button3 ul li{
+.timestamp ul li{
   font-size:14px;
   display:inline-block;
   float:left;
-  padding:0px;
+  padding-left:10px;
 }
 
 .name2 {
@@ -118,7 +115,7 @@ h1 {
   color: hsla(206, 18%, 73%, 1);
 }
 
-.button3 img {
+.timestamp img {
   width:25px;
   height:25px;
 }
@@ -133,6 +130,9 @@ blockquote {
   font-size:30px;
   text-transform:uppercase;
   margin:0px;
+  border-left: 1px solid black;
+  padding-top:10px;
+  padding-left: 20px;
   color: hsla(206, 84%, 38%, 1);
 }
 
@@ -159,35 +159,61 @@ blockquote {
   float:left;
 }
 
+
 /* this is the right side*/
 
 .div2 {
   margin-left:5px;
   margin-right:161px;
-  margin-top:66px;
-  height:883px;
+  margin-top:255px;
+  height:739px;
   width:305px;
   float:right;
 }
 
-.ad h5 {
+.social{
+  color: hsla(206, 18%, 73%, 1);
+}
+
+.avatar {
+  margin-left:87px;
+}
+
+.social p {
+  margin-left:95px;
+  margin-bottom:0px;
+  text-transform:uppercase;
+  color: hsla(206, 84%, 38%, 1);
+}
+
+.media ul{
+  display:inline;
+  margin-top:0px;
+  margin-bottom:55px;
+
+}
+
+.media li{
+  padding-right:3px;
+  border-right:1px solid hsla(206, 84%, 38%, 1);
+  display:inline-block;
+  text-align:center;
+}
+
+.ad p {
   text-align:right;
   color: hsla(206, 18%, 73%, 1);
   text-decoration: underline;
   width:278px;
-}
-
-.button4 {
-  color: hsla(206, 18%, 73%, 1);
-}
-
-.button4 ul li{
-  display:inline-block;
+  margin-top:0px;
+  font-size:16px;
 }
 
 .sbtext h4{
   text-transform:uppercase;
   color: hsla(206, 84%, 38%, 1);
+  padding-top:25px;
+  font-size:20px;
 }
 .sbtext p{
   height:169px;
@@ -200,7 +226,7 @@ blockquote {
 footer {
   width:1300px;
   height:579px;
-  margin-top:1010px;
+  margin-top:1110px;
   font-family:'Oswald', sans-serif;
 
 }
@@ -213,7 +239,7 @@ footer {
 }
 
 .logobottom p {
-  font-size:55px;
+  font-size:70px;
   text-align:center;
   margin:0px auto;
   padding:0px;
