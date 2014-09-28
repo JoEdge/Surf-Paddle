@@ -1,5 +1,4 @@
 /*CSS for HEADER section*/
-
 body{
   width:1315px;
   margin-right:auto;
@@ -13,7 +12,7 @@ header{
   background-image:url('assets/header.jpg');
   font-family:'Oswald', sans-serif;
   border: 1px solid white;
-  width:1298px;
+  width:1302px;
   height:523px;
 }
 
@@ -379,7 +378,7 @@ blockquote {
 
 footer {
   width:1315px;
-  height:629px;
+  height:575px;
   margin-top:1005px;
   font-family:'Oswald', sans-serif;
 
@@ -387,7 +386,7 @@ footer {
 
 .logobottom {
   height:150px;
-  width:1315px;
+  width:1302px;
   margin:0px auto;
   padding:0px;
   border-top: 1px gray solid;
@@ -403,6 +402,12 @@ footer {
   padding-top:20px;
 }
 
+.fcontainer{
+  display:block
+  width:1302px;
+  margin-left:5px;
+}
+
 .fcontainer img {
   padding:0px;
   float:left;
@@ -410,9 +415,9 @@ footer {
 }
 
 .pic1 {
-  width:330px;
+  width:332px;
   height:328px;
-  margin:-4px;
+  margin:-5px;
   background: url('assets/article-image-1.jpg');
   display:inline-block;
   position:relative;
@@ -426,7 +431,7 @@ footer {
   font-weight:bold;
   font-size:30px;
   line-height:3px;
-  color:white;
+  color:hsla (204, 82%, 18%, 1);
 }
 
 .pic1layer {
@@ -442,12 +447,13 @@ footer {
 
 .pic1layer:hover{
   background-color:transparent;
+  color:white;
 }
 
 .pic2 {
-  width:330px;
+  width:332px;
   height:328px;
-  margin:-4px;
+  margin:-5px;
   background: url('assets/article-image-2.jpg');
   display:inline-block;
   position:relative;
@@ -460,9 +466,9 @@ footer {
   width:245px;
   font-weight:bold;
   font-size:30px;
-  color:white;
-  line-height:3px;
-  margin-left:6px;
+  color:hsla (204, 82%, 18%, 1);
+  line-height:6px;
+  margin-left:2px;
   height:0px;
 
 }
@@ -478,12 +484,13 @@ footer {
 
 .pic2layer:hover{
   background-color:transparent;
+  color:white;
 }
 
 .pic3 {
-  width:330px;
+  width:332px;
   height:328px;
-  margin:-4px;
+  margin:-5px;
   background: url('assets/article-image-3.jpg');
   display:inline-block;
   position:relative;
@@ -496,9 +503,9 @@ footer {
   width:245px;
   font-weight:bold;
   font-size:30px;
-  color:white;
+  color:hsla (204, 82%, 18%, 1);
   line-height:35px;
-  margin-left:8px;
+  margin-left:6px;
   height:53px;
 }
 
@@ -513,12 +520,13 @@ footer {
 
 .pic3layer:hover{
   background-color:transparent;
+  color:white;
 }
 
 .pic4 {
-  width:330px;
+  width:332px;
   height:328px;
-  margin:-4px;
+  margin:-5px;
   background: url('assets/article-image-4.jpg');
   display:inline-block;
   position:relative;
@@ -531,9 +539,9 @@ footer {
   width:245px;
   font-weight:bold;
   font-size:30px;
-  color:white;
+  color:hsla (204, 82%, 18%, 1);
   line-height:3px;
-  margin-left:10px;
+  margin-left:6px;
   height:0px;
 }
 
@@ -548,12 +556,15 @@ footer {
 
 .pic4layer:hover{
   background-color:transparent;
+  color:white;
 }
 
 .bottom {
   height:96px;
+  width:1307px;
   background-color:hsla(204, 82%, 18%, 1);
   font-family: Open Sans, sans serif;
+  display:block;
 }
 
 .navbottom {
