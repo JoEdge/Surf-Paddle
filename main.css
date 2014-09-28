@@ -42,7 +42,7 @@ header{
 .blog ul li{
   display:inline-block;
   float:left;
-  margin-left:-20px
+  margin-left:-30px
 }
 
 .blog img {
@@ -58,11 +58,11 @@ header{
 .info {
   display:inline-block;
   width:400px;
-  margin-top:-2px;
-  margin-right:5px;
+  margin-top:1px;
+  margin-right:26px;
   list-style:none;
   float:right;
-  font-size:18px;
+  font-size:16px;
 }
 .info ul li{
   display:inline-block;
@@ -110,10 +110,11 @@ h1 {
   width:603px;
   line-height:70px;
   margin-top:0px;
+  margin-left:8px;
   margin-right:0px;
   margin-bottom:0px;
   font-family:'Oswald', sans-serif;
-  font-size:70px;
+  font-size:68px;
 }
 
 .timestamp {
@@ -131,7 +132,6 @@ h1 {
   margin-right:4px;
   margin-top:-10px;
   padding-left:0px;
-
 }
 
 .timestamp ul li{
@@ -156,10 +156,14 @@ h1 {
   margin-left:2px;
 }
 
+section {
+  margin-left:10px;
+}
+
 .text1 {
   height:230px;
   width:621px;
-  margin-top:0px;
+  margin-top:18px;
 }
 
 .text1 span {
@@ -171,15 +175,19 @@ h1 {
   color:hsla(206, 84%, 38%, 1);
 }
 
+.text1 p{
+  line-height:20px;
+}
+
 blockquote {
   height:56px;
   font-size:27px;
   font-weight:bold;
   text-transform:uppercase;
-  margin:0px;
+  margin:2px;
   border-left: 1px solid black;
-  padding-top:12px;
-  padding-left: 32px;
+  padding-top:9px;
+  padding-left: 20px;
   color: hsla(206, 84%, 38%, 1);
 }
 
@@ -196,9 +204,12 @@ blockquote {
   color:hsla(206, 84%, 38%, 1);
 }
 
+/* buttons*/
+
 .connect{
   height:50px;
   width:800px;
+  margin-left:12px;
   font-size:16px;
   font-weight:bold;
   list-style:none;
@@ -207,13 +218,29 @@ blockquote {
 }
 
 .read, .upload, .share {
-  height:30px;
-  width:140px;
-  margin-right:10px;
+  display:inline-block;
   float:left;
   font-size:12px;
   color:white;
   background-color:hsla(206, 18%, 69%,1);
+}
+
+.read {
+  height:30px;
+  width:155px;
+  margin-right:14px;
+}
+
+.upload {
+  height:30px;
+  width:125px;
+  margin-right:12px;
+}
+
+.share {
+  height:30px;
+  width:152px;
+  margin-right:15px;
 }
 
 .read:hover, .upload:hover, .share:hover {
@@ -236,15 +263,15 @@ blockquote {
 }
 
 .read img {
-  padding:7px 5px 7px 5px;
+  padding:7px 8px 7px 7px;
 }
 
 .upload img {
-  padding:7px 5px 7px 5px;
+  padding:8px 7px 6px 8px;
 }
 
 .share img {
-  padding:7px 4px 7px 6px;
+  padding:7px 5px 7px 10px;
 }
 
 .rc, .rl, .stp {
@@ -257,8 +284,8 @@ blockquote {
 
 .div2 {
   margin-left:5px;
-  margin-right:115px;
-  margin-top:100px;
+  margin-right:110px;
+  margin-top:80px;
   height:739px;
   width:305px;
   float:right;
@@ -273,15 +300,20 @@ blockquote {
   margin-left:100px;
 }
 
-.anne {
-  margin-left:60px;
+.socialmedia {
+  line-height:10px;
 }
 
-.social p {
-  margin-left:95px;
-  margin-bottom:0px;
+.anne {
+  margin-left:54px;
   text-transform:uppercase;
   color: hsla(206, 84%, 38%, 1);
+  line-height:0px;
+}
+
+.media {
+  height:20px;
+  margin-left:12px;
 }
 
 .media ul{
@@ -295,7 +327,7 @@ blockquote {
   padding-left:3px;
   border-left:1px solid hsla(0, 0%, 98%, 1);
   display:inline-block;
-  font-size:14px;
+  font-size:13px;
   text-align:center;
 }
 
@@ -304,7 +336,7 @@ blockquote {
 }
 
 .ad {
-  padding-top:20px;
+  padding-top:30px;
 }
 
 .ad p {
