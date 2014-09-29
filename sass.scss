@@ -1,16 +1,33 @@
 
 $font1: Oswald, sans-serif;
 $font2: Open Sans, sans-serif;
+
 $greenblue:hsla(206, 84%, 38%, 1);
 $lightgray:hsla(206, 18%, 73%, 1);
 $casper:hsla(206, 18%, 69%, 1);
 $shuttlegray:hsla(204, 82%, 18%, 1);
 $prussianblue:hsla (204, 82%, 18%, 1);
 $bluegray:hsla(205, 50%, 59%, 1);
-$bigwidth:1302px;
-$pic-width:332px;
-$pic-height:328px;
 
+$bigwidth:1302px;
+
+@mixin pic-box(){
+  width:332px;
+  height:328px;
+  margin:-5px;
+  display:inline-block;
+  position:relative;
+}
+
+@mixin pic-text(){
+  position:absolute;
+  bottom:0;
+  left:0.5em;
+  width:245px;
+  font-weight:bold;
+  font-size:30px;
+  color:$prussianblue;
+}
 
 /*CSS for HEADER section*/
 body{
@@ -425,23 +442,13 @@ footer {
 }
 
 .pic1 {
-  width:$pic-width;
-  height:$pic-height;
-  margin:-5px;
+  @include pic-box();
   background:url('assets/article-image-1.jpg');
-  display:inline-block;
-  position:relative;
 }
 
 .pic1text p{
-  position:absolute;
-  bottom:0;
-  left:0.5em;
-  width:245px;
-  font-weight:bold;
-  font-size:30px;
+  @include pic-text()
   line-height:3px;
-  color:$prussianblue;
 }
 
 .pic1layer {
@@ -461,22 +468,12 @@ footer {
 }
 
 .pic2 {
-  width:$pic-width;
-  height:$pic-height;
-  margin:-5px;
+  @include pic-box();
   background:url('assets/article-image-2.jpg');
-  display:inline-block;
-  position:relative;
 }
 
 .pic2text p{
-  position:absolute;
-  bottom:0;
-  left:0.5em;
-  width:245px;
-  font-weight:bold;
-  font-size:30px;
-  color:$prussianblue;
+  @include pic-text();
   line-height:6px;
   margin-left:2px;
   height:0px;
@@ -498,22 +495,12 @@ footer {
 }
 
 .pic3 {
-  width:$pic-width;
-  height:$pic-height;
-  margin:-5px;
+  @include pic-box();
   background:url('assets/article-image-3.jpg');
-  display:inline-block;
-  position:relative;
 }
 
 .pic3text p{
-  position:absolute;
-  bottom:0;
-  left:0.5em;
-  width:245px;
-  font-weight:bold;
-  font-size:30px;
-  color:$prussianblue;
+  @include pic-text();
   line-height:35px;
   margin-left:6px;
   height:53px;
@@ -534,22 +521,12 @@ footer {
 }
 
 .pic4 {
-  width:$pic-width;
-  height:$pic-height;
-  margin:-5px;
+  @include pic-box();
   background: url('assets/article-image-4.jpg');
-  display:inline-block;
-  position:relative;
 }
 
 .pic4text p{
-  position:absolute;
-  bottom:0;
-  left:0.5em;
-  width:245px;
-  font-weight:bold;
-  font-size:30px;
-  color:$prussianblue;
+  @include pic-text();
   line-height:3px;
   margin-left:6px;
   height:0px;
