@@ -1,584 +1,583 @@
-
 $font1: Oswald, sans-serif;
 $font2: Open Sans, sans-serif;
 
-$greenblue: hsla(206, 84%, 38%, 1);
-$lightgray: hsla(206, 18%, 73%, 1);
-$casper: hsla(206, 18%, 69%, 1);
-$shuttlegray: hsla(204, 82%, 18%, 1);
-$prussianblue: hsla (204, 82%, 18%, 1);
-$bluegray: hsla(205, 50%, 59%, 1);
+$greenblue:hsla(206, 84%, 38%, 1);
+$lightgray:hsla(206, 18%, 73%, 1);
+$casper:hsla(206, 18%, 69%, 1);
+$shuttlegray:hsla(204, 82%, 18%, 1);
+$prussianblue:hsla (204, 82%, 18%, 1);
+$bluegray:hsla(205, 50%, 59%, 1);
 
-$bigwidth: 1302px;
+$bigwidth:1302px;
 
 @mixin left-position() {
-    display: inline-block;
-    float: left;
+  display:inline-block;
+  float:left;
 }
 
-@mixin right-position() {
-    display: inline-block;
-    float: right;
+@mixin right-position(){
+  display:inline-block;
+  float:right;
 }
 
 @mixin button-box($mr) {
-    display: inline-block;
-    float: left;
-    width: 155px;
-    height: 30px;
-    margin-right: $mr;
-    background-color: $casper;
-    color: white;
-    font-size: 12px;
+    height:30px;
+    width:155px;
+    display:inline-block;
+    float:left;
+    font-size:12px;
+    margin-right:$mr;
+    color:white;
+    background-color:$casper;
 
     ul li {
-        display: inline;
-        float: left;
+      display:inline;
+      float:left;
     }
 
-        img {
-            display: block;
-            float: left;
-            width: 15px;
-            height: 15px;
-            border: 5px 4px 6px 6px solid black;
-            margin-right: 3px;
-            background-color: $shuttlegray;
-        }
+    img {
+        height:15px;
+        width:15px;
+        margin-right:3px;
+        border:5px 4px 6px 6px solid black;
+        background-color:$shuttlegray;
+        display:block;
+        float:left;
+    }
 }
 
-@mixin pic-box() {
-    position: relative;
-    display: inline-block;
-    width: 332px;
-    height: 328px;
-    margin: -5px;
-}
+@mixin pic-box(){
+  width:332px;
+  height:328px;
+  margin:-5px;
+  display:inline-block;
+  position:relative;
 
-@mixin pic-text($lh) {
-    position: absolute;
-    bottom: 0;
-    left: 0.5em;
-    width: 245px;
-    color: $prussianblue;
-    font-size: 30px;
-    font-weight: bold;
-    line-height: $lh;
-}
+    @mixin pic-text($lh){
+    position:absolute;
+    bottom:0;
+    left:0.5em;
+    width:245px;
+    font-weight:bold;
+    font-size:30px;
+    color:$prussianblue;
+    line-height:$lh;
+    }
 
-@mixin pic-layer() {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: $bluegray;
-    opacity: 0.85;
+      @mixin pic-layer(){
+      background-color:$bluegray;
+      position:absolute;
+      opacity:0.85;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      }
 }
 
 @mixin navbar($f) {
-    display: block;
-    margin-right: auto;
-    margin-left: auto;
-    font-size: $f;
+  margin-right:auto;
+  margin-left:auto;
+  font-size:$f;
+  display:block;
 }
 
 
 /*CSS for page*/
 
-body {
-  width: $bigwidth;
-  margin-right: auto;
-  list-style: none;
+body{
+  width:$bigwidth;
+  margin-right:auto;
+  list-style:none;
 }
 
 
 /*CSS for HEADER section*/
 
 header{
-    background-image: url('assets/header.jpg');
-    width: $bigwidth;
-    height: 523px;
-    border: 1px solid white;
-    font-family: $font1;
+  background-image:url('assets/header.jpg');
+  font-family:$font1;
+  border:1px solid white;
+  width:$bigwidth;
+  height:523px;
 }
 
 .navtop {
-    @include navbar(16px);
-    font-weight: bold;
-    text-transform: uppercase;
+  @include navbar(16px);
+  font-weight:bold;
+  text-transform:uppercase;
 }
 
 .blog {
-    display: block;
-    float: left;
-    margin-left: 130px;
+  display:block;
+  float:left;
+  margin-left:130px;
 }
 
 .blog ul {
-    margin-top: 9px;
+  margin-top:9px;
 }
 
-.blog ul li {
-    @include left-position();
-    margin-left: -30px
+.blog ul li{
+  @include left-position();
+  margin-left:-30px
 }
 
 .blog img {
-    @include left-position();
-    margin-right: 35px;
+  @include left-position();
+  margin-right:35px;
 }
 
 .sp {
-    padding-top: 10px;
+  padding-top:10px;
 }
 
 .info {
-    @include right-position();
-    margin-top: 1px;
-    margin-right: 162px;
-    font-size: 16px;
+  @include right-position();
+  margin-top:1px;
+  margin-right:162px;
+  font-size:16px;
+}
+.info ul li{
+  @include right-position();
+  margin-right:12px;
 }
 
-.info ul li {
-    @include right-position();
-    margin-right: 12px;
-}
-
-.logo {
-    text-align: center;
+.logo{
+  text-align:center;
 }
 
 .name {
-    padding-top: 193px;
-    color: white;
-    font-size: 90px;
+  color:white;
+  font-size:90px;
+  padding-top:193px;
 }
 
 .logo p {
-    margin: 0px auto;
-    font-size: 16px;
+  font-size:16px;
+  margin:0px auto;
 }
 
 /* this is the left side*/
+main {
+  font-family:$font2;
+}
 
 .div1 {
-    display: block;
-    float: left;
-    width: 637px;
-    height: 809px;
-    margin-top: 60px;
-    margin-left: 155px;
-    margin-right: 5px;
-    font-family: $font2;
+  margin-top:60px;
+  margin-left:155px;
+  margin-right:5px;
+  height:809px;
+  width:637px;
+  display:block;
+  float:left;
 }
 
 h1 {
-    width: 603px;
-    height: 142px;
-    margin-top: 0px;
-    margin-left: 8px;
-    margin-bottom: 0px;
-    margin-right: 0px;
-    font-family: $font1;
-    font-size: 68px;
-    text-transform: uppercase;
-    line-height: 70px;
+  text-transform:uppercase;
+  height:142:px;
+  width:603px;
+  line-height:70px;
+  margin-top:0px;
+  margin-left:8px;
+  margin-right:0px;
+  margin-bottom:0px;
+  font-family:$font1;
+  font-size:68px;
 }
-
-//Name and date on left side
 
 .timestamp {
-    height: 40px;
-    margin-left: 10px;
-    font-family: $font1;
-    line-height: 3px;
+  height:40px;
+  font-family:$font1;
+  margin-left:10px;
+  line-height:30px;
 }
 
-.timestamp span {
-    text-decoration: underline;
+.timestamp span{
+  text-decoration:underline;
 }
 
-.timestamp ul {
-    padding-left: 0px;
-    margin-right: 4px;
+.timestamp ul{
+  margin-right:4px;
+  margin-top:-10px;
+  padding-left:0px;
 }
 
-.timestamp ul li {
-    @include left-position();
-    font-size: 14px;
-}
-
-.timestamp img {
-    width: 22px;
-    height: 22px;
-    margin-left: 2px;
+.timestamp ul li{
+  @include left-details();
+  font-size:14px;
 }
 
 .name2 {
-    padding-left: 10px;
-    color: $greenblue;
+  color:$greenblue;
+  padding-left:10px;
 }
 
-.date {
-    padding-left: 25px;
-    color: $lightgray;
+.date{
+  color:$lightgray;
+  padding-left:25px;
 }
 
-//text on left side
+.timestamp img {
+  width:22px;
+  height:22px;
+  margin-left:2px;
+}
 
 section {
-    margin-left: 10px;
+  margin-left:10px;
 }
 
 .text1 {
-    width: 621px;
-    margin-top: 18px;
-    font-family: $font2;
+  height:230px;
+  width:621px;
+  margin-top:18px;
 }
 
 .text1 span {
-    color: $lightgray;
-    text-decoration: underline;
+  text-decoration:underline;
+  color:$lightgray;
 }
 
-.text1 span:hover {
-    color: $greenblue;
+.text1 span:hover{
+  color:$greenblue;
 }
 
-.text1 p {
-    line-height: 20px;
+.text1 p{
+  line-height:20px;
 }
 
 blockquote {
-    height: 56px;
-    padding-top: 9px;
-    padding-left: 20px;
-    border-left: 1px solid black;
-    margin: 2px;
-    color: $greenblue;
-    font-family: $font2;
-    font-size: 27px;
-    font-weight: bold;
-    text-transform: uppercase;
+  height:56px;
+  font-size:27px;
+  font-weight:bold;
+  text-transform:uppercase;
+  margin:2px;
+  border-left:1px solid black;
+  padding-top:9px;
+  padding-left:20px;
+  color:$greenblue;
 }
 
+.text2 {
+  height:330px;
+}
 
 .text2 span {
-    color: $lightgray;
-    text-decoration: underline;
+  text-decoration:underline;
+  color:$lightgray;
 }
 
-.text2 span:hover {
-    color: $greenblue;
+.text2 span:hover{
+  color:$greenblue;
 }
 
 /* buttons*/
 
-.connect {
-    display: block;
-    float: left;
-    width: 800px;
-    height: 50px;
-    margin-left: 12px;
-    font-size: 16px;
-    font-weight: bold;
+.connect{
+  height:50px;
+  width:800px;
+  margin-left:12px;
+  font-size:16px;
+  font-weight:bold;
+  display:block;
+  float:left;
 }
 
 .read {
-    @include button-box(14px);
+  @include button-box(14px);
 }
 
 .upload {
-    @include button-box(12px);
+  @include button-box(12px);
 }
 
 .share {
-    @include button-box(15px);
+  @include button-box(15px);
 }
 
 .read:hover, .upload:hover, .share:hover {
-    background-color: $greenblue;
+  background-color:$greenblue;
 }
 
 .read img {
-    padding: 7px 8px 7px 7px;
+  padding:7px 8px 7px 7px;
 }
 
 .upload img {
-    padding: 8px 7px 6px 8px;
+  padding:8px 7px 6px 8px;
 }
 
 .share img {
-    padding: 7px 5px 7px 10px;
+  padding:7px 5px 7px 10px;
 }
 
 .rc, .rl, .stp {
-    padding-top: 6px;
-    text-align: center;
+  text-align:center;
+  padding-top:6px;
 }
 
 
 /* this is the right side*/
 
 .div2 {
-    float: right;
-    width: 305px;
-    height: 739px;
-    margin-top: 81px;
-    margin-left: 5px;
-    margin-right: 150px;
-    font-family: $font2;
+  margin-left:5px;
+  margin-right:150px;
+  margin-top:81px;
+  height:739px;
+  width:305px;
+  float:right;
+  font-family:$font2;
 }
 
-.social {
-    color: $lightgray;
+.social{
+  color:$lightgray;
 }
 
 .avatar {
-    margin-left: 100px;
+  margin-left:100px;
 }
 
 .socialmedia {
-    line-height: 10px;
+  line-height:10px;
 }
 
 .anne {
-    margin-left: 54px;
-    color: $greenblue;
-    text-transform: uppercase;
-    line-height: 0px;
+  margin-left:54px;
+  text-transform:uppercase;
+  color:$greenblue;
+  line-height:0px;
 }
 
 .media {
-    height: 20px;
-    margin-left: 12px;
+  height:20px;
+  margin-left:12px;
 }
 
-.media ul {
-    display: inline;
-    margin-top: 0px;
-    margin-bottom: 55px;
+.media ul{
+  display:inline;
+  margin-top:0px;
+  margin-bottom:55px;
 }
 
-.media li {
-    display: inline-block;
-    padding-right: 2px;
-    padding-left: 3px;
-    border-left: 1px solid hsla(0, 0%, 98%, 1);
-    font-size: 13px;
-    text-align: center;
+.media li{
+  padding-right:2px;
+  padding-left:3px;
+  border-left:1px solid hsla(0, 0%, 98%, 1);
+  display:inline-block;
+  font-size:13px;
+  text-align:center;
 }
 
 .media li:first-child {
-    border-left: none;
+  border-left:none;
 }
 
 .ad {
-    padding-top: 30px;
+  padding-top:30px;
 }
 
 .ad p {
-    width: 278px;
-    margin-top: 0px;
-    color: $lightgray;
-    font-family : $font2;
-    font-size: 14px;
-    text-decoration: underline;
-    text-align: right;
+  text-align:right;
+  color:$lightgray;
+  text-decoration:underline;
+  width:278px;
+  margin-top:0px;
+  font-family:$font2;
+  font-size:14px;
 }
 
-.sbtext h3 {
-    padding-top: 28px;
-    margin-bottom: 0px;
-    color: $greenblue;
-    font-size: 18px;
-    font-family: $font1;
-    text-transform: uppercase;
+.sbtext h3{
+  text-transform:uppercase;
+  color:$greenblue;
+  padding-top:28px;
+  margin-bottom:0px;
+  font-size:18px;
+  font-family:$font1;
 }
-.sbtext p {
-    width: 278px;
-    height: 169px;
-    margin-top: 5px;
-    font-size: 14px;
-    color: $lightgray;
-    line-height: 23px;
+.sbtext p{
+  height:169px;
+  width:278px;
+  line-height:23px;
+  margin-top:5px;
+  font-size:14px;
+  color:$lightgray;
 }
 
 .sbtext span {
-    color: $lightgray;
-    text-decoration: underline;
+  text-decoration:underline;
+  color:$lightgray;
 }
 
 .sbtext span:hover {
-    color: $greenblue;
+  color:$greenblue;
 }
 
 /*This is the footer*/
 
 footer {
-    width: $bigwidth;
-    height: 575px;
-    margin-top: 1005px;
-    font-family: $font1;
+  width:$bigwidth;
+  height:575px;
+  margin-top:1005px;
+  font-family:$font1;
 }
 
 .logobottom {
-    width: $bigwidth;
-    height: 150px;
-    padding: 0px;
-    border-top: 1px gray solid;
-    margin: 0px auto;
+  height:150px;
+  width:$bigwidth;
+  margin:0px auto;
+  padding:0px;
+  border-top:1px gray solid;
 }
 
 .logobottom p {
-    padding-top: 20px;
-    margin-top: 0px;
-    margin-right: 20px;
-    margin-bottom: 0px;
-    font-size: 66px;
-    font-weight: bold;
-    text-align: center;
+  font-size:66px;
+  font-weight:bold;
+  text-align:center;
+  margin-top:0px;
+  margin-right:20px;
+  margin-bottom:0px;
+  padding-top:20px;
 }
 
-.fcontainer {
-    display: block;
-    width: $bigwidth;
-    margin-left: 5px;
+.fcontainer{
+  display:block
+  width:$bigwidth;
+  margin-left:5px;
 }
 
 .fcontainer img {
-    display: block;
-    float: left;
-    padding: 0px;
+  padding:0px;
+  float:left;
+  display:block;
 }
 
 .pic1 {
-    @include pic-box();
-    background: url('assets/article-image-1.jpg');
+  @include pic-box();
+  background:url('assets/article-image-1.jpg');
 }
 
-.pic1text p {
-    @include pic-text(3px);
+.pic1text p{
+  @include pic-text(3px);
 }
 
 .pic1layer {
-    @include pic-layer();
+  @include pic-layer();
 }
 
-.pic1layer:hover {
-    background-color: transparent;
-    color: white;
+.pic1layer:hover{
+  background-color:transparent;
+  color:white;
 }
 
 .pic2 {
-    @include pic-box();
-    background: url('assets/article-image-2.jpg');
+  @include pic-box();
+  background:url('assets/article-image-2.jpg');
 }
 
 .pic2text p{
-    @include pic-text(0px);
+  @include pic-text(0px);
 }
 
 .pic2layer {
-    @include pic-layer();
+  @include pic-layer();
 }
 
-.pic2layer:hover {
-    background-color: transparent;
-    color: white;
+.pic2layer:hover{
+  background-color:transparent;
+  color:white;
 }
 
 .pic3 {
-    @include pic-box();
-    background: url('assets/article-image-3.jpg');
+  @include pic-box();
+  background:url('assets/article-image-3.jpg');
 }
 
-.pic3text p {
-    @include pic-text(35px);
-    height: 53px;
+.pic3text p{
+  @include pic-text(35px);
+  height:53px;
 }
 
 .pic3layer {
-    @include pic-layer();
+  @include pic-layer();
 }
 
-.pic3layer:hover {
-    background-color: transparent;
-    color: white;
+.pic3layer:hover{
+  background-color:transparent;
+  color:white;
 }
 
 .pic4 {
-    @include pic-box();
-    background: url('assets/article-image-4.jpg');
+  @include pic-box();
+  background: url('assets/article-image-4.jpg');
 }
 
-.pic4text p {
-    @include pic-text(3px);
-    height: 0px;
-    margin-left: 6px;
+.pic4text p{
+  @include pic-text(3px);
+  margin-left:6px;
+  height:0px;
 }
 
 .pic4layer {
-   @include pic-layer();
+  @include pic-layer();
 }
 
-.pic4layer:hover {
-    background-color: transparent;
-    color: white;
+.pic4layer:hover{
+  background-color:transparent;
+  color:white;
 }
 
 .bottom {
-    display: block;
-    width: 1307px;
-    height: 96px;
-    background-color: $prussianblue;
-    font-family: $font2;
+  height:96px;
+  width:1307px;
+  background-color:$prussianblue;
+  font-family:$font2;
+  display:block;
 }
 
 .navbottom {
-    @include navbar(14px);
-    color: $casper;
+  @include navbar(14px);
+  color:$casper;
 }
 
 .bottomleft {
-    display: block;
-    float: left;
-    width: 555px;
-    height: 92px;
-    margin-top: 15px;
+  width:555px;
+  height:92px;
+  margin-top:15px;
+  float:left;
+  display:block;
 }
 
-.bottomleft ul li {
-    @include left-position();
-    height: 40px;
+.bottomleft ul li{
+  @include left-position();
+  height:40px;
 }
 
 .bottomleft img {
-    @include left-position();
-    margin-right: 12px;
+  @include left-position();
+  margin-right:12px;
 }
 
 .tiy {
-    padding-top: 10px;
+  padding-top:10px;
 }
 
 .bottomright {
-    @include left-position();
-    width: 470px;
-    height: 92px;
-    padding-top: 10px;
-    margin-top: 15px;
+  @include left-position();
+  width:470px;
+  height:92px;
+  margin-top:15px;
+  padding-top:10px;
 }
 
-.bottomright ul li {
-    @include right-position();
-    padding-right: 8px;
-    padding-left: 10px;
-    border-right: 1px solid $casper;
-    text-align: center;
+.bottomright ul li{
+  @include right-position();
+  text-align:center;
+  padding-right:8px;
+  padding-left:10px;
+  border-right:1px solid $casper;
 }
 
 .bottomright li:first-child {
-    border-right: none;
+  border-right:none;
 }
