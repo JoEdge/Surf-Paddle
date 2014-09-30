@@ -188,7 +188,7 @@ h1 {
 //Name and date on left side
 
 .timestamp {
-    height: 40px;
+    height: 30px;
     margin-left: 10px;
     font-family: $font1;
     line-height: 3px;
@@ -208,7 +208,7 @@ h1 {
     font-size: 14px;
 }
 
-.timestamp img {
+.timestamp ul img {
     width: 22px;
     height: 22px;
     margin-left: 2px;
@@ -246,13 +246,12 @@ section {
 
 .text1 p {
     font-family: $font2;
-    line-height: 20px;
+    line-height: 23px;
 }
 
 blockquote {
     height: 56px;
-    padding-top: 9px;
-    padding-left: 20px;
+    padding-left: 18px;
     border-left: 1px solid black;
     margin: 2px;
     color: $greenblue;
@@ -326,7 +325,7 @@ blockquote {
     height: 739px;
     margin-top: 81px;
     margin-left: 5px;
-    margin-right: 150px;
+    margin-right: 137px;
     font-family: $font2;
 }
 
