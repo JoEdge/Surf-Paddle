@@ -52,29 +52,28 @@ $bigwidth:1302px;
   margin:-5px;
   display:inline-block;
   position:relative;
-  
-
-    @mixin pic-text($lh){
-    position:absolute;
-    bottom:0;
-    left:0.5em;
-    width:245px;
-    font-weight:bold;
-    font-size:30px;
-    color:$prussianblue;
-    line-height:$lh;
-    }
-
-      @mixin pic-layer(){
-      background-color:$bluegray;
-      position:absolute;
-      opacity:0.85;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      }
 }
+
+@mixin pic-text($lh){
+position:absolute;
+bottom:0;
+left:0.5em;
+width:245px;
+font-weight:bold;
+font-size:30px;
+color:$prussianblue;
+line-height:$lh;
+}
+
+  @mixin pic-layer(){
+  background-color:$bluegray;
+  position:absolute;
+  opacity:0.85;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  }
 
 @mixin navbar($f) {
   margin-right:auto;
@@ -176,7 +175,7 @@ main {
 
 h1 {
   text-transform:uppercase;
-  height:142:px;
+  height:142px;
   width:603px;
   line-height:70px;
   margin-top:0px;
@@ -205,7 +204,7 @@ h1 {
 }
 
 .timestamp ul li{
-  @include left-details();
+  @include left-position();
   font-size:14px;
 }
 
@@ -442,7 +441,7 @@ footer {
 }
 
 .fcontainer{
-  display:block
+  display:block;
   width:$bigwidth;
   margin-left:5px;
 }
