@@ -27,7 +27,6 @@ $bigwidth: 1302px;
     width: 155px;
     height: 30px;
     margin-right: $mr;
-    display: inline-block;
     background-color: $casper;
     color: white;
     font-size: 12px;
@@ -162,38 +161,38 @@ header{
 }
 
 /* this is the left side*/
-main {
-    font-family: $font2;
-}
 
 .div1 {
     display: block;
     float: left;
+    width: 637px;
+    height: 809px;
     margin-top: 60px;
     margin-left: 155px;
     margin-right: 5px;
-    height: 809px;
-    width: 637px;
+    font-family: $font2;
 }
 
 h1 {
-    text-transform: uppercase;
-    height: 142px;
     width: 603px;
-    line-height: 70px;
+    height: 142px;
     margin-top: 0px;
     margin-left: 8px;
-    margin-right: 0px;
     margin-bottom: 0px;
+    margin-right: 0px;
     font-family: $font1;
     font-size: 68px;
+    text-transform: uppercase;
+    line-height: 70px;
 }
+
+//Name and date on left side
 
 .timestamp {
     height: 40px;
-    font-family: $font1;
     margin-left: 10px;
-    line-height: 30px;
+    font-family: $font1;
+    line-height: 3px;
 }
 
 .timestamp span {
@@ -201,24 +200,13 @@ h1 {
 }
 
 .timestamp ul {
-    margin-right: 4px;
-    margin-top: -10px;
     padding-left: 0px;
+    margin-right: 4px;
 }
 
 .timestamp ul li {
     @include left-position();
     font-size: 14px;
-}
-
-.name2 {
-    color: $greenblue;
-    padding-left: 10px;
-}
-
-.date {
-    color: $lightgray;
-    padding-left: 25px;
 }
 
 .timestamp img {
@@ -227,19 +215,31 @@ h1 {
     margin-left: 2px;
 }
 
+.name2 {
+    padding-left: 10px;
+    color: $greenblue;
+}
+
+.date {
+    padding-left: 25px;
+    color: $lightgray;
+}
+
+//text on left side
+
 section {
     margin-left: 10px;
 }
 
 .text1 {
-    height: 230px;
     width: 621px;
     margin-top: 18px;
+    font-family: $font2;
 }
 
 .text1 span {
-    text-decoration: underline;
     color: $lightgray;
+    text-decoration: underline;
 }
 
 .text1 span:hover {
@@ -252,23 +252,21 @@ section {
 
 blockquote {
     height: 56px;
+    padding-top: 9px;
+    padding-left: 20px;
+    border-left: 1px solid black;
+    margin: 2px;
+    color: $greenblue;
+    font-family: $font2;
     font-size: 27px;
     font-weight: bold;
     text-transform: uppercase;
-    margin: 2px;
-    border-left: 1px solid black;
-    padding-top: 9px;
-    padding-left: 20px;
-    color: $greenblue;
 }
 
-.text2 {
-    height: 330px;
-}
 
 .text2 span {
-    text-decoration: underline;
     color: $lightgray;
+    text-decoration: underline;
 }
 
 .text2 span:hover {
@@ -278,13 +276,13 @@ blockquote {
 /* buttons*/
 
 .connect {
-    height: 50px;
+    display: block;
+    float: left;
     width: 800px;
+    height: 50px;
     margin-left: 12px;
     font-size: 16px;
     font-weight: bold;
-    display: block;
-    float: left;
 }
 
 .read {
@@ -316,20 +314,20 @@ blockquote {
 }
 
 .rc, .rl, .stp {
-    text-align: center;
     padding-top: 6px;
+    text-align: center;
 }
 
 
 /* this is the right side*/
 
 .div2 {
+    float: right;
+    width: 305px;
+    height: 739px;
+    margin-top: 81px;
     margin-left: 5px;
     margin-right: 150px;
-    margin-top: 81px;
-    height: 739px;
-    width: 305px;
-    float: right;
     font-family: $font2;
 }
 
@@ -347,8 +345,8 @@ blockquote {
 
 .anne {
     margin-left: 54px;
-    text-transform: uppercase;
     color: $greenblue;
+    text-transform: uppercase;
     line-height: 0px;
 }
 
@@ -364,10 +362,10 @@ blockquote {
 }
 
 .media li {
+    display: inline-block;
     padding-right: 2px;
     padding-left: 3px;
     border-left: 1px solid hsla(0, 0%, 98%, 1);
-    display: inline-block;
     font-size: 13px;
     text-align: center;
 }
@@ -381,35 +379,35 @@ blockquote {
 }
 
 .ad p {
-    text-align: right;
-    color: $lightgray;
-    text-decoration: underline;
     width: 278px;
     margin-top: 0px;
+    color: $lightgray;
     font-family : $font2;
     font-size: 14px;
+    text-decoration: underline;
+    text-align: right;
 }
 
 .sbtext h3 {
-    text-transform: uppercase;
-    color: $greenblue;
     padding-top: 28px;
     margin-bottom: 0px;
+    color: $greenblue;
     font-size: 18px;
     font-family: $font1;
+    text-transform: uppercase;
 }
 .sbtext p {
-    height: 169px;
     width: 278px;
-    line-height: 23px;
+    height: 169px;
     margin-top: 5px;
     font-size: 14px;
     color: $lightgray;
+    line-height: 23px;
 }
 
 .sbtext span {
-    text-decoration: underline;
     color: $lightgray;
+    text-decoration: underline;
 }
 
 .sbtext span:hover {
@@ -426,21 +424,21 @@ footer {
 }
 
 .logobottom {
-    height: 150px;
     width: $bigwidth;
-    margin: 0px auto;
+    height: 150px;
     padding: 0px;
     border-top: 1px gray solid;
+    margin: 0px auto;
 }
 
 .logobottom p {
-    font-size: 66px;
-    font-weight: bold;
-    text-align: center;
+    padding-top: 20px;
     margin-top: 0px;
     margin-right: 20px;
     margin-bottom: 0px;
-    padding-top: 20px;
+    font-size: 66px;
+    font-weight: bold;
+    text-align: center;
 }
 
 .fcontainer {
@@ -450,9 +448,9 @@ footer {
 }
 
 .fcontainer img {
-    padding: 0px;
-    float: left;
     display: block;
+    float: left;
+    padding: 0px;
 }
 
 .pic1 {
@@ -517,8 +515,8 @@ footer {
 
 .pic4text p {
     @include pic-text(3px);
-    margin-left: 6px;
     height: 0px;
+    margin-left: 6px;
 }
 
 .pic4layer {
@@ -531,11 +529,11 @@ footer {
 }
 
 .bottom {
-    height: 96px;
+    display: block;
     width: 1307px;
+    height: 96px;
     background-color: $prussianblue;
     font-family: $font2;
-    display: block;
 }
 
 .navbottom {
@@ -544,11 +542,11 @@ footer {
 }
 
 .bottomleft {
+    display: block;
+    float: left;
     width: 555px;
     height: 92px;
     margin-top: 15px;
-    float: left;
-    display: block;
 }
 
 .bottomleft ul li {
@@ -569,16 +567,16 @@ footer {
     @include left-position();
     width: 470px;
     height: 92px;
-    margin-top: 15px;
     padding-top: 10px;
+    margin-top: 15px;
 }
 
 .bottomright ul li {
     @include right-position();
-    text-align: center;
     padding-right: 8px;
     padding-left: 10px;
     border-right: 1px solid $casper;
+    text-align: center;
 }
 
 .bottomright li:first-child {
