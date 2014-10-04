@@ -15,8 +15,8 @@ header {
 .navtop {
   display: block;
   margin-right: auto;
-  margin-left: auto;
   font-size: 16px;
+  margin-left: auto;
   font-weight: bold;
   text-transform: uppercase; }
 
@@ -92,13 +92,14 @@ h1 {
   height: 30px;
   margin-left: 10px;
   font-family: Oswald, sans-serif;
-  line-height: 3px; }
+  line-height: 22px; }
 
 .timestamp span {
   text-decoration: underline; }
 
 .timestamp ul {
   padding-left: 0px;
+  margin-top: -10px;
   margin-right: 4px; }
 
 .timestamp ul li {
@@ -139,8 +140,7 @@ section {
 
 blockquote {
   height: 56px;
-  padding-top: 9px;
-  padding-left: 20px;
+  padding-left: 18px;
   border-left: 1px solid black;
   margin: 2px;
   color: #106cb2;
@@ -162,6 +162,7 @@ blockquote {
   float: left;
   width: 800px;
   height: 50px;
+  margin-top: 12px;
   margin-left: 12px;
   font-size: 16px;
   font-weight: bold; }
@@ -174,7 +175,8 @@ blockquote {
   margin-right: 14px;
   background-color: #a2b2be;
   color: white;
-  font-size: 12px; }
+  font-size: 12px;
+  width: 155px; }
   .read ul li {
     display: inline;
     float: left; }
@@ -195,7 +197,8 @@ blockquote {
   margin-right: 12px;
   background-color: #a2b2be;
   color: white;
-  font-size: 12px; }
+  font-size: 12px;
+  width: 125px; }
   .upload ul li {
     display: inline;
     float: left; }
@@ -216,7 +219,8 @@ blockquote {
   margin-right: 15px;
   background-color: #a2b2be;
   color: white;
-  font-size: 12px; }
+  font-size: 12px;
+  width: 155px; }
   .share ul li {
     display: inline;
     float: left; }
@@ -347,6 +351,7 @@ footer {
   margin-top: 0px;
   margin-right: 20px;
   margin-bottom: 0px;
+  margin-left: 15px;
   font-size: 66px;
   font-weight: bold;
   text-align: center; }
@@ -374,7 +379,7 @@ footer {
   bottom: 0;
   left: 0.5em;
   width: 245px;
-  color: hsla 204, 82%, 18%, 1;
+  color: white;
   font-size: 30px;
   font-weight: bold;
   line-height: 3px; }
@@ -389,8 +394,7 @@ footer {
   opacity: 0.85; }
 
 .pic1layer:hover {
-  background-color: transparent;
-  color: white; }
+  background-color: transparent; }
 
 .pic2 {
   position: relative;
@@ -405,7 +409,7 @@ footer {
   bottom: 0;
   left: 0.5em;
   width: 245px;
-  color: hsla 204, 82%, 18%, 1;
+  color: white;
   font-size: 30px;
   font-weight: bold;
   line-height: 0px; }
@@ -420,8 +424,7 @@ footer {
   opacity: 0.85; }
 
 .pic2layer:hover {
-  background-color: transparent;
-  color: white; }
+  background-color: transparent; }
 
 .pic3 {
   position: relative;
@@ -436,7 +439,7 @@ footer {
   bottom: 0;
   left: 0.5em;
   width: 245px;
-  color: hsla 204, 82%, 18%, 1;
+  color: white;
   font-size: 30px;
   font-weight: bold;
   line-height: 35px;
@@ -452,8 +455,7 @@ footer {
   opacity: 0.85; }
 
 .pic3layer:hover {
-  background-color: transparent;
-  color: white; }
+  background-color: transparent; }
 
 .pic4 {
   position: relative;
@@ -468,7 +470,7 @@ footer {
   bottom: 0;
   left: 0.5em;
   width: 245px;
-  color: hsla 204, 82%, 18%, 1;
+  color: white;
   font-size: 30px;
   font-weight: bold;
   line-height: 3px;
@@ -485,21 +487,20 @@ footer {
   opacity: 0.85; }
 
 .pic4layer:hover {
-  background-color: transparent;
-  color: white; }
+  background-color: transparent; }
 
 .bottom {
   display: block;
   width: 1307px;
   height: 96px;
-  background-color: hsla 204, 82%, 18%, 1;
+  background-color: #083554;
   font-family: Open Sans, sans-serif; }
 
 .navbottom {
   display: block;
   margin-right: auto;
-  margin-left: auto;
   font-size: 14px;
+  margin-left: 125px;
   color: #a2b2be; }
 
 .bottomleft {
